@@ -77,6 +77,7 @@ def temEmpate():
 
 while True:
     print(f'Jogador da vez: {jogador}')
+    #tratando exceção de erro
     try:
         linha = int(input('Digite a linha: '))
         coluna = int(input('Digite a coluna: '))
