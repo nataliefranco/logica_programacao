@@ -1,9 +1,19 @@
-notas = [10, 5 , 6 , 8]
+print('Sistema de notas')
 
+opcao = ''
 media = 0
-for nota in notas:
-    media += nota
-media /=4
+notas = []
+
+
+while opcao.lower() != 'sair':
+    opcao = input('Digite uma nota ou sair para calcular a media: ')
+    if opcao.lower() != 'sair':
+        notas.append(int(opcao))
+
+for notaDaVez in notas:
+    media += notaDaVez
+
+media /= len(notas)
 
 if media >= 6:
     print(f'Sua média é {media} e você está: Aprovado!')
